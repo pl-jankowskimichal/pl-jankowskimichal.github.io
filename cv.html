@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Michał Jankowski</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            font-weight: 300;
+            color: #2d2d2d;
+            line-height: 1.4;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 2rem;
+            font-size: 0.95em;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: 600;
+            margin-bottom: 0.1rem;
+        }
+
+        .subtitle {
+            font-size: 1.05em;
+            color: #555;
+            margin-bottom: 0.2rem;
+        }
+
+        .contact {
+            font-size: 0.9em;
+            color: #777;
+            margin-bottom: 1.2rem;
+        }
+
+        .contact a { color: #777; }
+
+        h2 {
+            font-size: 0.85em;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #2D6A4F;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.3rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .job { margin-bottom: 0.8rem; }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
+        .company {
+            font-weight: 600;
+            font-size: 1.05em;
+        }
+
+        .role {
+            color: #555;
+        }
+
+        .dates {
+            font-size: 0.9em;
+            color: #888;
+        }
+
+        ul {
+            margin-top: 0.4rem;
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.2rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.3rem 2rem;
+            font-size: 0.95em;
+        }
+
+        .skill-cat {
+            font-weight: 400;
+            color: #555;
+        }
+
+        .langs {
+            font-size: 0.95em;
+        }
+
+        @media print {
+            body { padding: 1.5rem; font-size: 11pt; line-height: 1.45; }
+            h2 { margin-top: 1.2rem; }
+            .job { margin-bottom: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Michał Jankowski</h1>
+    <div class="subtitle">Senior Systems Engineer</div>
+    <div class="contact">
+        Rotterdam, Netherlands &middot;
+        <a href="mailto:hello@mjankowski.xyz">hello@mjankowski.xyz</a> &middot;
+        <a href="https://linkedin.com/in/pljankowskimichal">LinkedIn</a> &middot;
+        <a href="https://github.com/pl-jankowskimichal">GitHub</a>
+    </div>
+
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div><span class="skill-cat">Orchestration:</span> Kubernetes, Helm, ETCD</div>
+        <div><span class="skill-cat">Infrastructure:</span> Terraform, AWS, GCP, Azure</div>
+        <div><span class="skill-cat">Languages:</span> Go, Python, Bash</div>
+        <div><span class="skill-cat">Security:</span> HashiCorp Vault, PKI</div>
+        <div><span class="skill-cat">Domains:</span> Distributed Systems, Observability</div>
+        <div><span class="skill-cat">CI/CD:</span> GitLab CI, GitHub Actions</div>
+    </div>
+
+    <h2>Experience</h2>
+
+    <div class="job">
+        <div class="job-header">
+            <div><span class="company">Datadog</span> &mdash; <span class="role">Senior Systems Engineer</span></div>
+            <div class="dates">Oct 2021 &ndash; Present</div>
+        </div>
+        <div class="dates" style="margin-bottom: 0.3rem">Rotterdam, Netherlands</div>
+        <ul>
+            <li>Operating a multi-cloud Kubernetes platform (tens of clusters across AWS, GCP, Azure) serving thousands of engineers</li>
+            <li>Managing cluster lifecycle and ETCD reliability with Terraform, Helm, and custom Go services</li>
+            <li>Operating PKI infrastructure via HashiCorp Vault</li>
+            <li>Building observability pipelines and dashboards for platform</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <div><span class="company">Mendix</span> &mdash; <span class="role">Cloud Engineer / Team Lead</span></div>
+            <div class="dates">Feb 2019 &ndash; Sep 2021</div>
+        </div>
+        <div class="dates" style="margin-bottom: 0.3rem">Rotterdam, Netherlands</div>
+        <ul>
+            <li>Built and maintained a compliant Kubernetes platform used by internal and external teams globally</li>
+            <li>Imported manually-created AWS resources into Terraform for multi-region, multi-account management</li>
+            <li>Designed CI/CD pipelines for platform infrastructure and tenant applications</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <div><span class="company">Utomik</span> &mdash; <span class="role">Software Developer</span></div>
+            <div class="dates">Nov 2015 &ndash; Feb 2019</div>
+        </div>
+        <div class="dates" style="margin-bottom: 0.3rem">Eindhoven, Netherlands</div>
+        <ul>
+            <li>Built backend services for a gaming subscription platform on AWS using Python (Django) and Node.js</li>
+            <li>Created CI/CD pipelines with GitLab CI, Ansible, and CloudFormation</li>
+            <li>Designed and implemented an API caching layer with Varnish</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <div><span class="company">Unizeto Technologies</span> &mdash; <span class="role">Software Developer</span></div>
+            <div class="dates">Jul 2013 &ndash; Sep 2015</div>
+        </div>
+        <div class="dates" style="margin-bottom: 0.3rem">Szczecin, Poland</div>
+    </div>
+
+    <h2>Education</h2>
+    <div class="job">
+        <div class="job-header">
+            <div><span class="company">West Pomeranian University of Technology</span></div>
+            <div class="dates">2011 &ndash; 2015</div>
+        </div>
+        <div>B.Eng. in Computer Science, Szczecin, Poland</div>
+    </div>
+
+    <h2>Languages</h2>
+    <div class="langs">Polish (native) &middot; English (professional) &middot; Dutch (elementary)</div>
+</body>
+</html>
