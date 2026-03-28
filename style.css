@@ -24,6 +24,12 @@ body {
     text-align: center;
     max-width: 26rem;
     width: 100%;
+    animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .avatar {
@@ -81,6 +87,35 @@ hr {
 .links a svg {
     width: 1.2em;
     height: 1.2em;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: #95D5B2;
+        color: #1B4332;
+    }
+
+    .bio {
+        color: rgba(27, 67, 50, 0.65);
+    }
+
+    hr {
+        border-top-color: rgba(27, 67, 50, 0.14);
+    }
+
+    .links a {
+        border-color: rgba(27, 67, 50, 0.2);
+        color: rgba(27, 67, 50, 0.5);
+    }
+
+    .links a:hover {
+        color: #1B4332;
+        border-color: rgba(27, 67, 50, 0.4);
+    }
+
+    h1 {
+        color: #1B4332;
+    }
 }
 
 @media (max-width: 480px) {
